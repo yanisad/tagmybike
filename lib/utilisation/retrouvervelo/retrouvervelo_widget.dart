@@ -40,6 +40,7 @@ class _RetrouverveloWidgetState extends State<RetrouverveloWidget> {
 
     getCurrentUserLocation(defaultLocation: LatLng(0.0, 0.0), cached: true)
         .then((loc) => setState(() => currentUserLocationValue = loc));
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -183,7 +184,7 @@ class _RetrouverveloWidgetState extends State<RetrouverveloWidget> {
                                                     ),
                                                 ],
                                                 markerColor:
-                                                    GoogleMarkerColor.red,
+                                                    GoogleMarkerColor.yellow,
                                                 mapType: MapType.normal,
                                                 style: GoogleMapStyle.dark,
                                                 initialZoom: 16.0,
@@ -272,10 +273,7 @@ class _RetrouverveloWidgetState extends State<RetrouverveloWidget> {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    if ((FFAppState().note != null &&
-                            FFAppState().note != '') ||
-                        (FFAppState().photo != null &&
-                            FFAppState().photo != ''))
+                    if (FFAppState().note != null && FFAppState().note != '')
                       Container(
                         width: double.infinity,
                         height: 80.0,

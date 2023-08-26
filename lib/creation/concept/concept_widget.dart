@@ -33,6 +33,8 @@ class _ConceptWidgetState extends State<ConceptWidget> {
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       setAppLanguage(context, FFAppState().language);
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

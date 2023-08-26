@@ -26,6 +26,8 @@ class _ProblemeWidgetState extends State<ProblemeWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ProblemeModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

@@ -63,6 +63,7 @@ class _AjouteruntagWidgetState extends State<AjouteruntagWidget> {
     }
 
     _model.textController ??= TextEditingController();
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -172,7 +173,7 @@ class _AjouteruntagWidgetState extends State<AjouteruntagWidget> {
                                         ),
                                       )
                                       .toList(),
-                                  markerColor: GoogleMarkerColor.violet,
+                                  markerColor: GoogleMarkerColor.yellow,
                                   mapType: MapType.normal,
                                   style: GoogleMapStyle.dark,
                                   initialZoom: 16.0,
@@ -720,7 +721,9 @@ class _AjouteruntagWidgetState extends State<AjouteruntagWidget> {
                                                     EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             8.0, 0.0, 0.0, 0.0),
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
                                                 textStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleMedium
@@ -914,6 +917,10 @@ class _AjouteruntagWidgetState extends State<AjouteruntagWidget> {
                           await Future.delayed(
                               const Duration(milliseconds: 700));
                           Navigator.pop(context);
+                          setState(() {
+                            FFAppState().note = _model.textController.text;
+                            FFAppState().date = getCurrentTimestamp;
+                          });
 
                           context.pushNamed(
                             'Retrouvervelo',

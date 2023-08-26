@@ -27,6 +27,8 @@ class _AucunresultatWidgetState extends State<AucunresultatWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => AucunresultatModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

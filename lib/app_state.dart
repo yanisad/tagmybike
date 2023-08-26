@@ -73,7 +73,7 @@ class FFAppState extends ChangeNotifier {
     prefs.setString('ff_note', _value);
   }
 
-  String _language = 'English';
+  String _language = '';
   String get language => _language;
   set language(String _value) {
     _language = _value;

@@ -23,6 +23,8 @@ class _LangueWidgetState extends State<LangueWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => LangueModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -199,7 +201,9 @@ class _LangueWidgetState extends State<LangueWidget> {
                                               _model.daValue = false;
                                               _model.spanishValue = false;
                                             });
-                                            FFAppState().language = 'fr';
+                                            FFAppState().update(() {
+                                              FFAppState().language = 'fr';
+                                            });
 
                                             context.pushNamed('Concept');
                                           }

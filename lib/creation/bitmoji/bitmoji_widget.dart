@@ -35,6 +35,8 @@ class _BitmojiWidgetState extends State<BitmojiWidget> {
       setAppLanguage(
           context, valueOrDefault(currentUserDocument?.language, ''));
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

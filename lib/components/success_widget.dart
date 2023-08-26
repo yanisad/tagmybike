@@ -46,6 +46,8 @@ class _SuccessWidgetState extends State<SuccessWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => SuccessModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
