@@ -4,4 +4,4 @@ An iOS App that guides cyclists to nearby bike racks and allows them to tag thei
 
 ## Screenshots
 
-![5](https://github.com/yanisad/tagmybike/assets/143276209/77991dd9-ebc2-4fba-b1fd-b45772aaf525)
+![TagMyBike](https://github.com/yanisad/tagmybike/assets/143276209/1804a355-6206-4a40-b304-4cbf6380c23b)
