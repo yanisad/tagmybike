@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "306559191851",
+    "project_id": "tagmybike-3684e",
+    "storage_bucket": "tagmybike-3684e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306559191851:android:24e57808bcc86e16df936e",
+        "android_client_info": {
+          "package_name": "com.mycompany.tagmybike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306559191851-rmqvjol79khlme55rs6jaf5h6llqflv9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.tagmybike",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "306559191851-gdip3kat3mnvl9m2skcc39lrlcpd81dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKV-8KLnGBSrMK3CXxFFicPanGRfCgdXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306559191851-gdip3kat3mnvl9m2skcc39lrlcpd81dr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "306559191851-gqeqn59t4d4stfldg9vsgkbkjp8mppeu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.tagmybike"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

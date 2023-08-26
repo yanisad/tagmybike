@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>306559191851-gqeqn59t4d4stfldg9vsgkbkjp8mppeu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.306559191851-gqeqn59t4d4stfldg9vsgkbkjp8mppeu</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>306559191851-rmqvjol79khlme55rs6jaf5h6llqflv9.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCPhjoOAYw1E6xz2MapJN4p-lCMjSE0dQc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>306559191851</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mycompany.tagmybike</string>
+	<key>PROJECT_ID</key>
+	<string>tagmybike-3684e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tagmybike-3684e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:306559191851:ios:5748791ed2f83637df936e</string>
+</dict>
+</plist>
